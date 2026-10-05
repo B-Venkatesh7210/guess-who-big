@@ -13,7 +13,9 @@ const TICK_GAP_PX = 4;
 const COLLISION_PX = 18;
 
 type RevealMarkersProps = {
-  columnWidth: number;
+  /** px from the target's center line to the stage's right edge. */
+  sideRoom: number;
+  /** Visible heights of the guess outline and the real silhouette. */
   guessPx: number;
   guessWidth: number;
   actualPx: number;
@@ -22,16 +24,16 @@ type RevealMarkersProps = {
 };
 
 function fitsBeside(
-  columnWidth: number,
+  sideRoom: number,
   objectWidth: number,
   kind: MarkerKind,
 ): boolean {
-  const room = columnWidth / 2 - objectWidth / 2;
-  return room >= TICK_GAP_PX + TICK_PX + 6 + LABEL_WIDTH_PX[kind] + 8;
+  const room = sideRoom - objectWidth / 2;
+  return room >= TICK_GAP_PX + TICK_PX + 6 + LABEL_WIDTH_PX[kind];
 }
 
 export function RevealMarkers({
-  columnWidth,
+  sideRoom,
   guessPx,
   guessWidth,
   actualPx,
@@ -39,8 +41,8 @@ export function RevealMarkers({
   showActual,
 }: RevealMarkersProps) {
   const widest = showActual ? Math.max(guessWidth, actualWidth) : guessWidth;
-  const guessBeside = fitsBeside(columnWidth, widest, "guess");
-  const actualBeside = fitsBeside(columnWidth, widest, "actual");
+  const guessBeside = fitsBeside(sideRoom, widest, "guess");
+  const actualBeside = fitsBeside(sideRoom, widest, "actual");
 
   let guessPosition: LabelPosition = guessBeside ? "center" : "above";
   let actualPosition: LabelPosition = actualBeside ? "center" : "above";

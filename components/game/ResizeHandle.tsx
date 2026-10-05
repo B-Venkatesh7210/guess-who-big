@@ -1,6 +1,7 @@
 import type { PointerEvent } from "react";
 
 type ResizeHandleProps = {
+  label: string;
   onPointerDown: (event: PointerEvent<HTMLButtonElement>) => void;
   onPointerMove: (event: PointerEvent<HTMLButtonElement>) => void;
   onPointerUp: (event: PointerEvent<HTMLButtonElement>) => void;
@@ -8,6 +9,7 @@ type ResizeHandleProps = {
 };
 
 export function ResizeHandle({
+  label,
   onPointerDown,
   onPointerMove,
   onPointerUp,
@@ -16,7 +18,7 @@ export function ResizeHandle({
   return (
     <button
       type="button"
-      aria-label="Drag up or down to resize the soda can"
+      aria-label={label}
       className="absolute left-1/2 top-0 z-20 flex h-11 w-11 -translate-x-1/2 -translate-y-[calc(100%+8px)] cursor-ns-resize touch-none items-center justify-center rounded-[8px] border border-border bg-surface-2 text-target focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-reference"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}

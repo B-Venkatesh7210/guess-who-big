@@ -50,6 +50,26 @@ export function clampTargetSize(
   return Math.min(max, Math.max(min, value));
 }
 
+/** Log-scale slider position (0–1) so steps feel equal for tiny and huge objects. */
+export function guessToSliderPosition(
+  guessCm: number,
+  minCm: number,
+  maxCm: number,
+): number {
+  if (minCm <= 0 || maxCm <= minCm) return 0;
+  const position = Math.log(guessCm / minCm) / Math.log(maxCm / minCm);
+  return clampTargetSize(position, 0, 1);
+}
+
+export function sliderPositionToGuess(
+  position: number,
+  minCm: number,
+  maxCm: number,
+): number {
+  const clamped = clampTargetSize(position, 0, 1);
+  return minCm * (maxCm / minCm) ** clamped;
+}
+
 export function adjustGuessByPercent(
   guessCm: number,
   percentDelta: number,

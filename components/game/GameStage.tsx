@@ -1,9 +1,10 @@
-import type { PointerEvent, RefObject } from "react";
+import type { PointerEvent, Ref } from "react";
 import { measurementLabel } from "@/data/objects";
-import { formatCentimeters } from "@/lib/game/format";
+import { getSilhouetteGeometry } from "@/data/silhouettes";
+import { formatLength } from "@/lib/game/format";
+import { silhouetteBox, type StageLayout } from "@/lib/scale/stageLayout";
 import type { GamePhase, ScaleObjectDefinition } from "@/types/game";
 import { MeasurementGrid } from "./MeasurementGrid";
-import { silhouetteAspectFor } from "@/components/objects/ObjectRenderer";
 import { ResizeHandle } from "./ResizeHandle";
 import { RevealMarkers } from "./RevealMarkers";
 import { ScaleObject } from "./ScaleObject";
@@ -11,18 +12,18 @@ import { useRevealMotion } from "./useRevealMotion";
 import { ZoomControls } from "./ZoomControls";
 
 type GameStageProps = {
-  stageRef: RefObject<HTMLDivElement | null>;
-  stageWidth: number;
+  stageRef: Ref<HTMLElement>;
+  roundKey: string;
   phase: GamePhase;
   reducedMotion: boolean;
   dragging: boolean;
   reference: ScaleObjectDefinition;
   target: ScaleObjectDefinition;
+  layout: StageLayout;
   referenceRenderedPx: number;
   guessRenderedPx: number;
   correctRenderedPx: number;
   lockedRenderedPx: number | null;
-  fieldHeight: number;
   zoom: number;
   minZoom: number;
   maxZoom: number;
@@ -36,17 +37,17 @@ type GameStageProps = {
 
 export function GameStage({
   stageRef,
-  stageWidth,
+  roundKey,
   phase,
   reducedMotion,
   dragging,
   reference,
   target,
+  layout,
   referenceRenderedPx,
   guessRenderedPx,
   correctRenderedPx,
   lockedRenderedPx,
-  fieldHeight,
   zoom,
   minZoom,
   maxZoom,
@@ -63,13 +64,18 @@ export function GameStage({
     (phase === "revealing" || phase === "result") && lockedRenderedPx != null;
   const showActualMeasurement = phase === "result";
   const ready = referenceRenderedPx > 0;
-  const targetAspect = silhouetteAspectFor(target.svgKey);
+  const targetGeometry = getSilhouetteGeometry(target.svgKey);
+  const ghostBox = lockedRenderedPx != null ? silhouetteBox(targetGeometry, lockedRenderedPx) : null;
+  const actualBox = silhouetteBox(targetGeometry, correctRenderedPx);
+
+  const slotStyle = (width: number) => ({ width, flex: "none" as const });
 
   return (
     <section
       ref={stageRef}
+      tabIndex={-1}
       data-phase={phase}
-      className={`overflow-hidden rounded-[16px] border border-border-subtle bg-surface ${dragging ? "select-none" : ""}`}
+      className={`overflow-hidden rounded-[16px] border border-border-subtle bg-surface outline-none ${dragging ? "select-none" : ""}`}
       aria-label="Scale comparison"
     >
       <div className="flex justify-end px-3 pt-3">
@@ -83,15 +89,21 @@ export function GameStage({
         />
       </div>
 
-      <div className="relative mt-3" style={{ height: fieldHeight }}>
+      <div className="relative mt-3" style={{ height: layout.fieldHeight }}>
         <MeasurementGrid />
-        <div className="absolute inset-0 flex">
-          <div className="relative flex h-full w-1/2 items-end justify-center">
+        <div
+          className="absolute inset-0 flex justify-evenly"
+          style={{ paddingInline: layout.sidePadding }}
+        >
+          <div
+            className="relative flex h-full items-end justify-center"
+            style={slotStyle(layout.referenceSlotWidth)}
+          >
             {ready ? (
               <div data-object="reference" className="relative z-10">
                 <ScaleObject
                   svgKey={reference.svgKey}
-                  renderedPx={referenceRenderedPx}
+                  measuredPx={referenceRenderedPx}
                   tone="reference"
                   label={`${reference.name}, reference`}
                 />
@@ -99,17 +111,21 @@ export function GameStage({
             ) : null}
           </div>
 
-          <div className="relative flex h-full w-1/2 items-end justify-center">
+          <div
+            className="relative flex h-full items-end justify-center"
+            style={slotStyle(layout.targetSlotWidth)}
+          >
             {ready ? (
               <>
-                {showGhost ? (
+                {showGhost && lockedRenderedPx != null ? (
                   <div
                     data-object="ghost"
                     className="pointer-events-none absolute bottom-0 left-1/2 z-20 -translate-x-1/2"
                   >
                     <ScaleObject
+                      key={roundKey}
                       svgKey={target.svgKey}
-                      renderedPx={lockedRenderedPx}
+                      measuredPx={lockedRenderedPx}
                       tone="target"
                       variant="ghost"
                       label=""
@@ -119,13 +135,14 @@ export function GameStage({
                 <div data-object="target" className="relative z-10">
                   <ScaleObject
                     svgKey={target.svgKey}
-                    renderedPx={solidPx}
+                    measuredPx={solidPx}
                     tone="target"
                     animate={animateSize}
                     label={`${target.name}, your object`}
                   />
                   {controlsEnabled ? (
                     <ResizeHandle
+                      label={`Drag up or down to resize the ${target.name.toLowerCase()}`}
                       onPointerDown={onResizePointerDown}
                       onPointerMove={onResizePointerMove}
                       onPointerUp={onResizePointerUp}
@@ -133,13 +150,13 @@ export function GameStage({
                     />
                   ) : null}
                 </div>
-                {showGhost ? (
+                {showGhost && ghostBox ? (
                   <RevealMarkers
-                    columnWidth={stageWidth / 2}
-                    guessPx={lockedRenderedPx}
-                    guessWidth={lockedRenderedPx * targetAspect}
-                    actualPx={correctRenderedPx}
-                    actualWidth={correctRenderedPx * targetAspect}
+                    sideRoom={layout.targetSideRoom}
+                    guessPx={ghostBox.height}
+                    guessWidth={ghostBox.width}
+                    actualPx={actualBox.height}
+                    actualWidth={actualBox.width}
                     showActual={showActualMeasurement}
                   />
                 ) : null}
@@ -149,23 +166,30 @@ export function GameStage({
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 px-3 py-4">
-        <ObjectCaption
-          kicker="REFERENCE"
-          kickerClassName="text-reference"
-          name={reference.name}
-          detail={`${measurementLabel(reference.measurementType)} · ${formatCentimeters(reference.realSizeCm)}`}
-        />
-        <ObjectCaption
-          kicker="YOUR OBJECT"
-          kickerClassName="text-target"
-          name={target.name}
-          detail={
-            showActualMeasurement
-              ? `${measurementLabel(target.measurementType)} · ${formatCentimeters(target.realSizeCm)}`
-              : measurementLabel(target.measurementType)
-          }
-        />
+      <div
+        className="flex justify-evenly gap-3 py-4"
+        style={{ paddingInline: layout.sidePadding }}
+      >
+        <div style={slotStyle(layout.referenceSlotWidth)} className="min-w-0">
+          <ObjectCaption
+            kicker="REFERENCE"
+            kickerClassName="text-reference"
+            name={reference.name}
+            detail={`${measurementLabel(reference.measurementType)} · ${formatLength(reference.realSizeCm)}`}
+          />
+        </div>
+        <div style={slotStyle(layout.targetSlotWidth)} className="min-w-0">
+          <ObjectCaption
+            kicker="YOUR OBJECT"
+            kickerClassName="text-target"
+            name={target.name}
+            detail={
+              showActualMeasurement
+                ? `${measurementLabel(target.measurementType)} · ${formatLength(target.realSizeCm)}`
+                : measurementLabel(target.measurementType)
+            }
+          />
+        </div>
       </div>
     </section>
   );
@@ -187,7 +211,7 @@ function ObjectCaption({
       <span className={`font-mono text-[11px] tracking-[0.16em] ${kickerClassName}`}>
         {kicker}
       </span>
-      <span className="text-base font-medium text-text-primary">{name}</span>
+      <span className="text-base font-medium leading-5 text-text-primary">{name}</span>
       <span className="font-mono text-xs text-text-secondary">{detail}</span>
     </div>
   );

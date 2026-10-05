@@ -1,14 +1,18 @@
 "use client";
 
-import { useEffect, useState, type RefObject } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-export function useStageWidth(
-  ref: RefObject<HTMLElement | null>,
-): number {
+export function useStageWidth() {
+  const elementRef = useRef<HTMLElement | null>(null);
+  const [element, setElement] = useState<HTMLElement | null>(null);
   const [width, setWidth] = useState(0);
 
+  const ref = useCallback((node: HTMLElement | null) => {
+    elementRef.current = node;
+    setElement(node);
+  }, []);
+
   useEffect(() => {
-    const element = ref.current;
     if (!element) return;
 
     const measure = (next: number) => {
@@ -18,12 +22,12 @@ export function useStageWidth(
     measure(element.getBoundingClientRect().width);
     const observer = new ResizeObserver((entries) => {
       const entry = entries[0];
-      if (!entry) return;
+      if (!entry || !entry.target.isConnected) return;
       measure(entry.contentRect.width);
     });
     observer.observe(element);
     return () => observer.disconnect();
-  }, [ref]);
+  }, [element]);
 
-  return width;
+  return { ref, elementRef, width };
 }

@@ -1,10 +1,13 @@
-import { ObjectRenderer, silhouetteAspectFor } from "@/components/objects/ObjectRenderer";
+import { ObjectRenderer } from "@/components/objects/ObjectRenderer";
+import { getSilhouetteGeometry } from "@/data/silhouettes";
+import { silhouetteBox } from "@/lib/scale/stageLayout";
 
 const REVEAL_EASE = "cubic-bezier(0.16, 1, 0.3, 1)";
 
 type ScaleObjectProps = {
   svgKey: string;
-  renderedPx: number;
+  /** Rendered px of the object's measured dimension, from the scale engine. */
+  measuredPx: number;
   tone: "reference" | "target";
   variant?: "solid" | "ghost";
   animate?: boolean;
@@ -13,13 +16,13 @@ type ScaleObjectProps = {
 
 export function ScaleObject({
   svgKey,
-  renderedPx,
+  measuredPx,
   tone,
   variant = "solid",
   animate = false,
   label,
 }: ScaleObjectProps) {
-  const width = renderedPx * silhouetteAspectFor(svgKey);
+  const box = silhouetteBox(getSilhouetteGeometry(svgKey), measuredPx);
   const color =
     variant === "ghost"
       ? "var(--text-primary)"
@@ -31,8 +34,8 @@ export function ScaleObject({
     <div
       className="relative shrink-0"
       style={{
-        height: renderedPx,
-        width,
+        height: box.height,
+        width: box.width,
         color,
         opacity: variant === "ghost" ? 0.85 : 1,
         transition: animate
@@ -47,8 +50,8 @@ export function ScaleObject({
           style={{ background: "currentColor" }}
         />
       ) : null}
-      <ObjectRenderer svgKey={svgKey} variant={variant} />
-      <span className="sr-only">{label}</span>
+      <ObjectRenderer svgKey={svgKey} variant={variant} pxPerUnit={box.pxPerUnit} />
+      {label ? <span className="sr-only">{label}</span> : null}
     </div>
   );
 }
