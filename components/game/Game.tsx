@@ -32,6 +32,7 @@ export function Game() {
 
       <GameStage
         stageRef={stageRef}
+        stageWidth={stageWidth}
         phase={round.phase}
         reducedMotion={round.reducedMotion}
         dragging={round.dragging}

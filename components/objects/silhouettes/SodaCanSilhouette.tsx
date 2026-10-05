@@ -10,40 +10,26 @@ export function SodaCanSilhouette({ variant }: SilhouetteProps) {
         className="block h-full w-full overflow-visible"
         aria-hidden="true"
       >
-        <path
-          d="M1.2 8 H64.8 V110 Q64.8 120.6 33 120.6 Q1.2 120.6 1.2 110 Z"
-          fill="none"
-          stroke="var(--background)"
-          strokeWidth="4"
-          strokeLinejoin="round"
-        />
-        <ellipse
-          cx="33"
-          cy="8"
-          rx="31.8"
-          ry="7.2"
-          fill="none"
-          stroke="var(--background)"
-          strokeWidth="4"
-        />
-        <path
-          d="M1.2 8 H64.8 V110 Q64.8 120.6 33 120.6 Q1.2 120.6 1.2 110 Z"
+        <g
           fill="none"
           stroke="currentColor"
-          strokeWidth="1.7"
+          strokeWidth="1.5"
+          strokeDasharray="5 4"
           strokeLinejoin="round"
-          opacity="0.9"
-        />
-        <ellipse
-          cx="33"
-          cy="8"
-          rx="31.8"
-          ry="7.2"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          opacity="0.9"
-        />
+          vectorEffect="non-scaling-stroke"
+        >
+          <path
+            d="M0.75 8 H65.25 V110 Q65.25 121.25 33 121.25 Q0.75 121.25 0.75 110 Z"
+            vectorEffect="non-scaling-stroke"
+          />
+          <ellipse
+            cx="33"
+            cy="8"
+            rx="32.25"
+            ry="7.25"
+            vectorEffect="non-scaling-stroke"
+          />
+        </g>
       </svg>
     );
   }

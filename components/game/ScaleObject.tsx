@@ -20,7 +20,12 @@ export function ScaleObject({
   label,
 }: ScaleObjectProps) {
   const width = renderedPx * silhouetteAspectFor(svgKey);
-  const color = tone === "reference" ? "var(--reference)" : "var(--target)";
+  const color =
+    variant === "ghost"
+      ? "var(--text-primary)"
+      : tone === "reference"
+        ? "var(--reference)"
+        : "var(--target)";
 
   return (
     <div
@@ -29,7 +34,7 @@ export function ScaleObject({
         height: renderedPx,
         width,
         color,
-        opacity: 1,
+        opacity: variant === "ghost" ? 0.85 : 1,
         transition: animate
           ? `height 600ms ${REVEAL_EASE}, width 600ms ${REVEAL_EASE}`
           : "none",

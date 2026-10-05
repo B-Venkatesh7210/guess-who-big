@@ -3,13 +3,16 @@ import { measurementLabel } from "@/data/objects";
 import { formatCentimeters } from "@/lib/game/format";
 import type { GamePhase, ScaleObjectDefinition } from "@/types/game";
 import { MeasurementGrid } from "./MeasurementGrid";
+import { silhouetteAspectFor } from "@/components/objects/ObjectRenderer";
 import { ResizeHandle } from "./ResizeHandle";
+import { RevealMarkers } from "./RevealMarkers";
 import { ScaleObject } from "./ScaleObject";
 import { useRevealMotion } from "./useRevealMotion";
 import { ZoomControls } from "./ZoomControls";
 
 type GameStageProps = {
   stageRef: RefObject<HTMLDivElement | null>;
+  stageWidth: number;
   phase: GamePhase;
   reducedMotion: boolean;
   dragging: boolean;
@@ -33,6 +36,7 @@ type GameStageProps = {
 
 export function GameStage({
   stageRef,
+  stageWidth,
   phase,
   reducedMotion,
   dragging,
@@ -59,6 +63,7 @@ export function GameStage({
     (phase === "revealing" || phase === "result") && lockedRenderedPx != null;
   const showActualMeasurement = phase === "result";
   const ready = referenceRenderedPx > 0;
+  const targetAspect = silhouetteAspectFor(target.svgKey);
 
   return (
     <section
@@ -128,6 +133,16 @@ export function GameStage({
                     />
                   ) : null}
                 </div>
+                {showGhost ? (
+                  <RevealMarkers
+                    columnWidth={stageWidth / 2}
+                    guessPx={lockedRenderedPx}
+                    guessWidth={lockedRenderedPx * targetAspect}
+                    actualPx={correctRenderedPx}
+                    actualWidth={correctRenderedPx * targetAspect}
+                    showActual={showActualMeasurement}
+                  />
+                ) : null}
               </>
             ) : null}
           </div>

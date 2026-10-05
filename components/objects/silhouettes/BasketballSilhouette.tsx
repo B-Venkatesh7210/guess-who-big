@@ -13,23 +13,13 @@ export function BasketballSilhouette({ variant }: SilhouetteProps) {
         <circle
           cx="50"
           cy="50"
-          r="48.2"
+          r="49.25"
           fill="none"
           stroke="currentColor"
-          strokeWidth="1.6"
+          strokeWidth="1.5"
+          strokeDasharray="5 4"
+          vectorEffect="non-scaling-stroke"
         />
-        <g
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          strokeLinecap="round"
-          opacity="0.8"
-        >
-          <path d="M50 6 V94" />
-          <path d="M8 50 H92" />
-          <path d="M20 24 C36 34 64 34 80 24" />
-          <path d="M20 76 C36 66 64 66 80 76" />
-        </g>
       </svg>
     );
   }
