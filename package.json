@@ -1,12 +1,13 @@
 {
-  "name": "scaffold-tmp",
+  "name": "scale-it",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --experimental-strip-types --import ./lib/test/register.mjs --test lib/scale/scaleMath.test.mts lib/scoring/scoring.test.mts lib/game/gameEngine.test.mts"
   },
   "dependencies": {
     "next": "16.3.8",

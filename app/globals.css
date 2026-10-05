@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #07090d;
+  --surface: #0d1117;
+  --surface-2: #121821;
+  --border: #202936;
+  --border-subtle: #161d26;
+  --text-primary: #f4f7fa;
+  --text-secondary: #8d99a8;
+  --text-muted: #5d6875;
+  --reference: #4ea1ff;
+  --target: #ff5c55;
+  --success: #69d391;
+  --warning: #f3c969;
+  --danger: #ff655f;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-reference: var(--reference);
+  --color-target: var(--target);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  overflow-x: clip;
+  background: var(--background);
+  color: var(--text-primary);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--reference) 35%, transparent);
+  color: var(--text-primary);
+}
+
+.measurement-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--border) 78%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--border) 62%, transparent) 1px, transparent 1px),
+    linear-gradient(to right, color-mix(in srgb, var(--border-subtle) 100%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--border-subtle) 100%, transparent) 1px, transparent 1px);
+  background-size: 72px 72px, 72px 72px, 24px 24px, 24px 24px;
+  background-position: center bottom;
+}
+
+.scale-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 44px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.scale-slider:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.scale-slider:focus-visible {
+  outline: none;
+}
+
+.scale-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  background: var(--border);
+}
+
+.scale-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 44px;
+  margin-top: -21px;
+  border: none;
+  border-radius: 8px;
+  background: var(--target);
+}
+
+.scale-slider::-moz-range-track {
+  height: 2px;
+  background: var(--border);
+  border: none;
+}
+
+.scale-slider::-moz-range-thumb {
+  width: 22px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background: var(--target);
+}
+
+.result-in {
+  animation: result-in 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes result-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .result-in {
+    animation: none;
+  }
 }

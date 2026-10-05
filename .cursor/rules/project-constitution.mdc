@@ -1,0 +1,19 @@
+---
+description: SCALE IT product constitution — read before any UI or game work
+alwaysApply: true
+---
+
+# SCALE IT constitution
+
+`PROJECT_CONSTITUTION.md` is the source of truth for product, UX, visual, interaction, content, and engineering rules.
+
+Before any new UI or game mechanic, read that file and follow it.
+
+- Use semantic color tokens. Blue is always the reference object. Coral/red is always the player-controlled target.
+- Measurements live in centimeters. Scale comes from the math engine only. Objects share one baseline and scale from the bottom.
+- Scoring lives in one utility: `round(1000 * exp(-3 * relativeError))`, clamped 0–1000.
+- Primary CTA copy is LOCK IN, then NEXT ROUND. One dominant CTA at a time.
+- Keep math, state, object data, visuals, storage, animation, and routing separate. Do not put all logic in Game.tsx.
+- If code conflicts with the constitution, change the code.
+
+V1 excludes auth, leaderboards, achievements, multiplayer, 3D, payments, and extra game modes.
