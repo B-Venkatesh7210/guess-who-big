@@ -1,0 +1,19 @@
+{
+  "query": "Bordeaux wine bottle",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Château Chamanara Bordeaux Rouge Wine (France).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_Chamanara_Bordeaux_Rouge_Wine_(France).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "FrenchWineBordeaux"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Apteeker Melchior - 1 - Autor Robert Lang - 4717.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Apteeker_Melchior_-_1_-_Autor_Robert_Lang_-_4717.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Robert Lang"
+    }
+  ]
+}

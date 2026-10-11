@@ -1,0 +1,19 @@
+{
+  "query": "aluminium drink can",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Drinking can ring-pull tab.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Drinking_can_ring-pull_tab.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Marcos André"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Beverage cans.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Beverage_cans.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Oto Zapletal"
+    }
+  ]
+}

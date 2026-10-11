@@ -1,0 +1,19 @@
+{
+  "query": "Table Mountain Cape Town",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Cape Town (ZA), Table Mountain -- 2024 -- 2825.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain_--_2024_--_2825.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Dietmar Rabich"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Cape Town (ZA), Table Mountain, Seilbahn, Gedenkplatte -- 2024 -- 2870.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain,_Seilbahn,_Gedenkplatte_--_2024_--_2870.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Dietmar Rabich"
+    }
+  ]
+}

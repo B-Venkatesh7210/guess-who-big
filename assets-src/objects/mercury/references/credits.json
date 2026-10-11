@@ -1,0 +1,26 @@
+{
+  "query": "Mercury planet MESSENGER",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Mercury in color - Prockter07 centered.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg",
+      "license": "Public domain",
+      "artist": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington. Edited version of Image:Mercury in color - Prockter07.jpg by Papa Lima Whiskey."
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Mercury in color - Prockter07-edit1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mercury_in_color_-_Prockter07-edit1.jpg",
+      "license": "Public domain",
+      "artist": "National Aeronautics and Space Administration/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington"
+    },
+    {
+      "file": "ref-3.jpg",
+      "title": "File:Mercury in true color.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg",
+      "license": "Public domain",
+      "artist": "NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State University/Carnegie Institution of Washington"
+    }
+  ]
+}

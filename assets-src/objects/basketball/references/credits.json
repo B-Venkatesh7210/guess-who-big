@@ -1,0 +1,26 @@
+{
+  "query": "basketball ball",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Bouncing ball strobe edit.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bouncing_ball_strobe_edit.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "MichaelMaggs Edit by Richard Bartz"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Estudiantes vs Unicaja Málaga - Carl English y Zoran Dragić.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Estudiantes_vs_Unicaja_M%C3%A1laga_-_Carl_English_y_Zoran_Dragi%C4%87.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Carlos Delgado"
+    },
+    {
+      "file": "ref-3.JPG",
+      "title": "File:A person holding basket ball in his hand.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:A_person_holding_basket_ball_in_his_hand.JPG",
+      "license": "CC BY-SA 3.0",
+      "artist": "Aathavan jaffna"
+    }
+  ]
+}

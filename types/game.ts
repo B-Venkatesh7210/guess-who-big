@@ -4,23 +4,27 @@ export type MeasurementType =
   | "width"
   | "diameter"
   | "shoulder-height"
-  | "wingspan";
+  | "wingspan"
+  | "elevation";
 
 /** 1 = everyone knows its size, 3 = most people have never stood next to one. */
 export type Familiarity = 1 | 2 | 3;
 
-export interface ScaleObjectDefinition {
-  id: string;
-  name: string;
-  category: string;
-  measurementType: MeasurementType;
-  realSizeCm: number;
-  svgKey: string;
-  fact: string;
-  approximationLabel?: string;
-  sourceNote?: string;
-  familiarity: Familiarity;
-}
+export type ObjectCategory =
+  | "everyday"
+  | "sports"
+  | "home"
+  | "street"
+  | "music"
+  | "people"
+  | "animals"
+  | "marine"
+  | "dinosaurs"
+  | "vehicles"
+  | "buildings"
+  | "monuments"
+  | "landscape"
+  | "astronomical";
 
 /** Which silhouette axis carries the real measurement. */
 export type MeasureAxis = "vertical" | "horizontal";
@@ -35,6 +39,25 @@ export interface SilhouetteGeometry {
   height: number;
   axis: MeasureAxis;
   extent: number;
+}
+
+/** Built art for one object: public/objects/<id>.svg plus its geometry. */
+export interface ObjectArt extends SilhouetteGeometry {
+  version: string;
+}
+
+export interface ScaleObjectDefinition {
+  id: string;
+  name: string;
+  category: ObjectCategory;
+  measurementType: MeasurementType;
+  realSizeCm: number;
+  fact: string;
+  approximationLabel?: string;
+  /** Where the real-world size comes from. */
+  sizeSource: string;
+  familiarity: Familiarity;
+  art: ObjectArt;
 }
 
 export type RoundDifficulty =

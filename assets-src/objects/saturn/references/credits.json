@@ -1,0 +1,19 @@
+{
+  "query": "Saturn Cassini rings",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Top view of the rings of Saturn by Cassini - October 10, 2013.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Top_view_of_the_rings_of_Saturn_by_Cassini_-_October_10,_2013.jpg",
+      "license": "Public domain",
+      "artist": "NASA/JPL-Caltech/SSI/Cornell"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Saturn from Cassini Orbiter (2004-10-06).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Saturn_from_Cassini_Orbiter_(2004-10-06).jpg",
+      "license": "Public domain",
+      "artist": "NASA/JPL/Space Science Institute"
+    }
+  ]
+}

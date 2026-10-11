@@ -1,0 +1,19 @@
+{
+  "query": "Matterhorn",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Matterhorn Riffelsee 2005-06-11.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Matterhorn_Riffelsee_2005-06-11.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Dirk Beyer"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Matterhorn, March 2019 (01).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Matterhorn,_March_2019_(01).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Liridon"
+    }
+  ]
+}

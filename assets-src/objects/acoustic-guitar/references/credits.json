@@ -1,0 +1,19 @@
+{
+  "query": "dreadnought acoustic guitar front",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Dick Knight jumbo acoustic guitar (plus others).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Dick_Knight_jumbo_acoustic_guitar_(plus_others).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Tony 1212"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:2003 Faith Saturn electro-acoustic guitar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2003_Faith_Saturn_electro-acoustic_guitar.jpg",
+      "license": "CC BY 2.0",
+      "artist": "Tim Walker from United Kingdom"
+    }
+  ]
+}

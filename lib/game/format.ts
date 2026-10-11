@@ -2,11 +2,20 @@ function trimNumber(value: number, decimals: number): string {
   return value.toFixed(decimals).replace(/\.?0+$/, "");
 }
 
-/** Under a metre reads in cm, larger sizes in metres. Values are stored in cm. */
+const CM_PER_M = 100;
+const CM_PER_KM = 100_000;
+
+/**
+ * Values are stored in cm. Under a metre reads in cm, up to 10 km in metres
+ * (so mountain heights read the way they are quoted), beyond that in km.
+ */
 export function formatLength(cm: number): string {
-  if (cm < 100) return `${trimNumber(Math.round(cm * 10) / 10, 1)} cm`;
-  if (cm < 1000) return `${(cm / 100).toFixed(2)} m`;
-  return `${trimNumber(cm / 100, 1)} m`;
+  if (cm < CM_PER_M) return `${trimNumber(Math.round(cm * 10) / 10, 1)} cm`;
+  if (cm < 10 * CM_PER_M) return `${(cm / CM_PER_M).toFixed(2)} m`;
+  if (cm < 10 * CM_PER_KM) {
+    return `${(cm / CM_PER_M).toLocaleString("en-US", { maximumFractionDigits: 1 })} m`;
+  }
+  return `${Math.round(cm / CM_PER_KM).toLocaleString("en-US")} km`;
 }
 
 export function formatScaleRatio(ratio: number): string {

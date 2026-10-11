@@ -1,0 +1,26 @@
+{
+  "query": "Elizabeth Tower Big Ben",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Big Ben at sunset - 2014-10-27 17-30.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Colin"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Big Ben Elizabeth Tower London 2023 01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Big_Ben_Elizabeth_Tower_London_2023_01.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Julian Herzog (Website)"
+    },
+    {
+      "file": "ref-3.jpg",
+      "title": "File:London Big Ben Inner Clock Face 1070925-PSD.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Ermell"
+    }
+  ]
+}

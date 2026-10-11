@@ -1,6 +1,5 @@
 import type { PointerEvent, Ref } from "react";
 import { measurementLabel } from "@/data/objects";
-import { getSilhouetteGeometry } from "@/data/silhouettes";
 import { formatLength } from "@/lib/game/format";
 import { silhouetteBox, type StageLayout } from "@/lib/scale/stageLayout";
 import type { GamePhase, ScaleObjectDefinition } from "@/types/game";
@@ -64,9 +63,8 @@ export function GameStage({
     (phase === "revealing" || phase === "result") && lockedRenderedPx != null;
   const showActualMeasurement = phase === "result";
   const ready = referenceRenderedPx > 0;
-  const targetGeometry = getSilhouetteGeometry(target.svgKey);
-  const ghostBox = lockedRenderedPx != null ? silhouetteBox(targetGeometry, lockedRenderedPx) : null;
-  const actualBox = silhouetteBox(targetGeometry, correctRenderedPx);
+  const ghostBox = lockedRenderedPx != null ? silhouetteBox(target.art, lockedRenderedPx) : null;
+  const actualBox = silhouetteBox(target.art, correctRenderedPx);
 
   const slotStyle = (width: number) => ({ width, flex: "none" as const });
 
@@ -102,7 +100,7 @@ export function GameStage({
             {ready ? (
               <div data-object="reference" className="relative z-10">
                 <ScaleObject
-                  svgKey={reference.svgKey}
+                  object={reference}
                   measuredPx={referenceRenderedPx}
                   tone="reference"
                   label={`${reference.name}, reference`}
@@ -124,7 +122,7 @@ export function GameStage({
                   >
                     <ScaleObject
                       key={roundKey}
-                      svgKey={target.svgKey}
+                      object={target}
                       measuredPx={lockedRenderedPx}
                       tone="target"
                       variant="ghost"
@@ -134,7 +132,7 @@ export function GameStage({
                 ) : null}
                 <div data-object="target" className="relative z-10">
                   <ScaleObject
-                    svgKey={target.svgKey}
+                    object={target}
                     measuredPx={solidPx}
                     tone="target"
                     animate={animateSize}

@@ -1,0 +1,19 @@
+{
+  "query": "AA battery",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:AA VARTA battery-side PNr°0782.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:AA_VARTA_battery-side_PNr%C2%B00782.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "D-Kuru"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:18650, AA, and AAA battery with penny.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:18650,_AA,_and_AAA_battery_with_penny.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "JayCubby"
+    }
+  ]
+}

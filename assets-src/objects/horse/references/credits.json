@@ -1,0 +1,33 @@
+{
+  "query": "horse standing side view",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Sawrey Gilpin - Horse Standing, Side View Facing Right - B2001.2.831 - Yale Center for British Art.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sawrey_Gilpin_-_Horse_Standing,_Side_View_Facing_Right_-_B2001.2.831_-_Yale_Center_for_British_Art.jpg",
+      "license": "CC0",
+      "artist": "Sawrey Gilpin"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Horse posing in the grass.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Horse_posing_in_the_grass.jpg",
+      "license": "CC0",
+      "artist": "Joselodos"
+    },
+    {
+      "file": "ref-3.jpg",
+      "title": "File:Horse mongolia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Horse_mongolia.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "mathieu dreo"
+    },
+    {
+      "file": "ref-4.jpg",
+      "title": "File:Angkor SiemReap Cambodia Horse-at-Angkor Wat-01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Angkor_SiemReap_Cambodia_Horse-at-Angkor_Wat-01.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "CEphoto, Uwe Aranas"
+    }
+  ]
+}

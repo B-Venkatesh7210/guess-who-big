@@ -1,0 +1,19 @@
+{
+  "query": "Mount Everest",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Everest, Himalayas.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Everest,_Himalayas.jpg",
+      "license": "CC BY 4.0",
+      "artist": "Vyacheslav Argenberg"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Everest North Face toward Base Camp Tibet Luca Galuzzi 2006.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+      "license": "CC BY-SA 2.5",
+      "artist": "Luca Galuzzi (Lucag)"
+    }
+  ]
+}

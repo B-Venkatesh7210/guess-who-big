@@ -1,20 +1,22 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { getSilhouetteGeometry } from "../../data/silhouettes.ts";
+import type { SilhouetteGeometry } from "../../types/game.ts";
 import { calculateRenderedSize, guessToSliderPosition, sliderPositionToGuess } from "./scaleMath.ts";
 import { computeStageLayout, silhouetteBox } from "./stageLayout.ts";
 
-const ball = getSilhouetteGeometry("basketball");
-const can = getSilhouetteGeometry("soda-can");
-const car = getSilhouetteGeometry("car");
+const ball: SilhouetteGeometry = { width: 100, height: 100, axis: "vertical", extent: 100 };
+const can: SilhouetteGeometry = { width: 66, height: 122, axis: "vertical", extent: 122 };
+const car: SilhouetteGeometry = { width: 845, height: 275, axis: "horizontal", extent: 845 };
+const adult: SilhouetteGeometry = { width: 52, height: 170, axis: "vertical", extent: 170 };
 
 test("silhouette box maps the measured span to the measured dimension", () => {
   const box = silhouetteBox(can, 122);
   assert.equal(box.height, 122);
   assert.equal(box.width, 66);
   const carBox = silhouetteBox(car, 450);
-  assert.equal(carBox.width, 450);
-  assert.equal(carBox.height, 145);
+  assert.ok(Math.abs(carBox.width - (450 * car.width) / car.extent) < 1e-9);
+  assert.ok(Math.abs(carBox.height - (carBox.width * car.height) / car.width) < 1e-9);
+  assert.ok(carBox.height < carBox.width);
 });
 
 test("both objects share one px-per-cm and the target max fits", () => {
@@ -54,7 +56,7 @@ test("horizontal objects fit the stage width", () => {
     stageWidth: 1032,
     zoom: 1,
     referenceCm: 170,
-    referenceGeometry: getSilhouetteGeometry("adult"),
+    referenceGeometry: adult,
     targetMaxCm: 900,
     targetGeometry: car,
   });

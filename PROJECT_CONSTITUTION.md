@@ -317,16 +317,26 @@ Do NOT reveal its true real-world size until Lock In.
 OBJECT VISUAL LANGUAGE
 --------------------------------------------------
 
-V1 uses clean silhouettes.
+V1 uses detailed monochrome renders.
 
-Silhouettes should:
+Each object is one silhouette filled with currentColor plus up to three tonal layers:
+two shade layers in black and one highlight layer in white, at fixed opacities set by the asset pipeline.
+Tonal layers never introduce a new hue, so blue stays the reference and coral stays the target.
+
+Renders should:
 
 be immediately recognizable
-use currentColor
-contain minimal internal details
+use currentColor for the silhouette
+show real form through shading, not outlines
+use a side or front orthographic view with no perspective
+be lit from the top-left
+touch the ground line with no cast shadow
 have consistent visual weight
 remain readable at small sizes
 remain recognizable at large sizes
+
+Art is produced by the object pipeline (scripts/objects), from AI renders guided by real reference images.
+Hand-drawn one-off SVGs are not added.
 
 Do not mix:
 

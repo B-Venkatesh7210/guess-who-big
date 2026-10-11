@@ -1,0 +1,19 @@
+{
+  "query": "Mount Fuji",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Grumman E-2C Hawkeyes of VAW-115 fly past Mount Fuji on 15 February 2007 (070215-N-2604L-024).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Grumman_E-2C_Hawkeyes_of_VAW-115_fly_past_Mount_Fuji_on_15_February_2007_(070215-N-2604L-024).jpg",
+      "license": "Public domain",
+      "artist": "U.S. Navy photo by Lt. j.g. Andrew Leatherwood"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Mount Fuji at sunset, March 2025.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_at_sunset,_March_2025.jpg",
+      "license": "CC0",
+      "artist": "Romain Guy from San Francisco, USA"
+    }
+  ]
+}

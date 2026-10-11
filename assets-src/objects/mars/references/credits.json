@@ -1,0 +1,26 @@
+{
+  "query": "Mars Valles Marineris globe",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:TerraformedMarsGlobeRealistic.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:TerraformedMarsGlobeRealistic.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Daein Ballard"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Valles Marineris NASA World Wind map Mars.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Valles_Marineris_NASA_World_Wind_map_Mars.jpg",
+      "license": "Public domain",
+      "artist": "Original uploader was Mk at pl.wikipedia"
+    },
+    {
+      "file": "ref-3.gif",
+      "title": "File:Globo de Marte - Valles Marineris.gif",
+      "source": "https://commons.wikimedia.org/wiki/File:Globo_de_Marte_-_Valles_Marineris.gif",
+      "license": "Public domain",
+      "artist": "unknown"
+    }
+  ]
+}

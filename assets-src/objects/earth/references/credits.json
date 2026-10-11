@@ -1,0 +1,19 @@
+{
+  "query": "Blue Marble Earth",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:The Earth seen from Apollo 17.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+      "license": "Public domain",
+      "artist": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Blue Marble Western Hemisphere.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Blue_Marble_Western_Hemisphere.jpg",
+      "license": "Public domain",
+      "artist": "NASA images by Reto Stöckli, based on data from NASA and NOAA. Instrument: Terra - MODIS"
+    }
+  ]
+}

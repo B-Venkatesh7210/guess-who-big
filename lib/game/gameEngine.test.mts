@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { getScaleObject, scaleObjects } from "../../data/objects.ts";
-import { silhouetteGeometry } from "../../data/silhouettes.ts";
 import { calculateRelativeError } from "../scale/scaleMath.ts";
 import { evaluateGuess, getRoundObjects, ROUNDS_PER_GAME } from "./gameEngine.ts";
 import {
@@ -22,12 +21,12 @@ import {
 
 const seeds = Array.from({ length: 60 }, (_, index) => `seed-${index}`);
 
-test("every object has a matching silhouette and a sane size", () => {
+test("every object has art geometry and a sane size", () => {
   const ids = new Set<string>();
   for (const object of scaleObjects) {
     assert.ok(!ids.has(object.id), `duplicate id ${object.id}`);
     ids.add(object.id);
-    assert.ok(silhouetteGeometry[object.svgKey], `missing silhouette ${object.svgKey}`);
+    assert.ok(object.art.width > 0 && object.art.height > 0, `${object.id}: missing art`);
     assert.ok(object.realSizeCm > 0);
     assert.ok(object.fact.length > 0);
   }

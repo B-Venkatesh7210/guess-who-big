@@ -1,0 +1,19 @@
+{
+  "query": "blue whale illustration side",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:'Attack on Whale Island' (exercise) RMG PV1016.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%27Attack_on_Whale_Island%27_(exercise)_RMG_PV1016.jpg",
+      "license": "Public domain",
+      "artist": "William Lionel Wyllie"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:The American Museum journal (c1900-(1918)) (18157149242).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_American_Museum_journal_(c1900-(1918))_(18157149242).jpg",
+      "license": "No restrictions",
+      "artist": "Internet Archive Book Images"
+    }
+  ]
+}

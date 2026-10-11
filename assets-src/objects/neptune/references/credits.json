@@ -1,0 +1,19 @@
+{
+  "query": "Neptune Voyager 2",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Neptune Full.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Neptune_Full.jpg",
+      "license": "Public domain",
+      "artist": "NASA"
+    },
+    {
+      "file": "ref-2.png",
+      "title": "File:Neptune - Voyager 2 (29347980845).png",
+      "source": "https://commons.wikimedia.org/wiki/File:Neptune_-_Voyager_2_(29347980845).png",
+      "license": "Public domain",
+      "artist": "NASA / JPL / Voyager-ISS / Justin Cowart"
+    }
+  ]
+}

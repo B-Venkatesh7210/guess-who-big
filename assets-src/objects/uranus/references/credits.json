@@ -1,0 +1,19 @@
+{
+  "query": "Uranus planet",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Uranus2.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Uranus2.jpg",
+      "license": "Public domain",
+      "artist": "NASA/JPL-Caltech"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Polar aurora on Uranus HST.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Polar_aurora_on_Uranus_HST.jpg",
+      "license": "Public domain",
+      "artist": "Credit: NASA, ESA, and L. Lamy (Observatory of Paris, CNRS, CNES)"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "query": "tennis ball",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Cavapoo dog chasing a maltipoo with a ball (11881).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cavapoo_dog_chasing_a_maltipoo_with_a_ball_(11881).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Rhododendrites"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Tennis ball blanks and felt.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tennis_ball_blanks_and_felt.jpg",
+      "license": "CC0",
+      "artist": "Mx. Granger"
+    }
+  ]
+}

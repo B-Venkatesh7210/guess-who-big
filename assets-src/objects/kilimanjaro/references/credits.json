@@ -1,0 +1,19 @@
+{
+  "query": "Mount Kilimanjaro",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Mount Kilimanjaro.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Kilimanjaro.jpg",
+      "license": "GFDL 1.2",
+      "artist": "Muhammad Mahdi Karim"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Mount Kilimanjaro Dec 2009 edit1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Kilimanjaro_Dec_2009_edit1.jpg",
+      "license": "GFDL 1.2",
+      "artist": "Muhammad Mahdi Karim"
+    }
+  ]
+}

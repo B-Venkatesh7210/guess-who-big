@@ -1,0 +1,19 @@
+{
+  "query": "Empire State Building",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:View of Empire State Building from Rockefeller Center New York City dllu.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Dllu"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Empire State Building (aerial view).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Empire_State_Building_(aerial_view).jpg",
+      "license": "Public domain",
+      "artist": "Sam Valadi"
+    }
+  ]
+}

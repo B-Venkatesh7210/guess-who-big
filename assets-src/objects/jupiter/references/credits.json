@@ -1,0 +1,19 @@
+{
+  "query": "Jupiter Cassini",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Portrait of Jupiter from Cassini.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Jupiter_from_Cassini.jpg",
+      "license": "Public domain",
+      "artist": "NASA/JPL/Space Science Institute"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Jupiter by Cassini-Huygens.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Jupiter_by_Cassini-Huygens.jpg",
+      "license": "Public domain",
+      "artist": "NASA/JPL/University of Arizona"
+    }
+  ]
+}

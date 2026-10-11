@@ -1,0 +1,19 @@
+{
+  "query": "Great Pyramid of Giza",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Great Sphinx of Giza (أبو الهول).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_of_Giza_(%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Petar Milošević"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:The Great Sphinx, Pyramids of Gizeh-1839) by David Roberts, RA.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Great_Sphinx,_Pyramids_of_Gizeh-1839)_by_David_Roberts,_RA.jpg",
+      "license": "Public domain",
+      "artist": "David Roberts"
+    }
+  ]
+}

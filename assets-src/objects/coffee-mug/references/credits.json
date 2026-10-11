@@ -1,0 +1,19 @@
+{
+  "query": "white coffee mug side",
+  "credits": [
+    {
+      "file": "ref-1.gif",
+      "title": "File:Mug and Torus morph.gif",
+      "source": "https://commons.wikimedia.org/wiki/File:Mug_and_Torus_morph.gif",
+      "license": "Public domain",
+      "artist": "Lucas Vieira"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Vanilla Slice, Jamaica Blue Booragoon Garden City, 2026 (01).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Vanilla_Slice,_Jamaica_Blue_Booragoon_Garden_City,_2026_(01).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Bahnfrend"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "query": "traffic cone",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Remains of a traffic cone in the Safeway parking lot.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Remains_of_a_traffic_cone_in_the_Safeway_parking_lot.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Ser Amantio di Nicolao"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Traffic cone green.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Traffic_cone_green.jpg",
+      "license": "CC BY 3.0",
+      "artist": "remixed by TwentytwoAug original by Reinis~commonswiki"
+    }
+  ]
+}

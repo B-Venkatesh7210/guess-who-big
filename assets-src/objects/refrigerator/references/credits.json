@@ -1,0 +1,19 @@
+{
+  "query": "fridge freezer front",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Cooking For the Freezer by Myra Waldo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cooking_For_the_Freezer_by_Myra_Waldo.jpg",
+      "license": "Public domain",
+      "artist": "Photo by Bill Hughes"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Cooking For the Freezer by Myra Waldo (cropped).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cooking_For_the_Freezer_by_Myra_Waldo_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "Photo by Bill Hughes"
+    }
+  ]
+}

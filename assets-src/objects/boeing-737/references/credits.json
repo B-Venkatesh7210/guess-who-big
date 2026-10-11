@@ -1,0 +1,19 @@
+{
+  "query": "Boeing 737-800 side view",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Boeing 737-800 BCF, Paris Air Show 2019, Le Bourget (SIAE1235-HDR).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Boeing_737-800_BCF,_Paris_Air_Show_2019,_Le_Bourget_(SIAE1235-HDR).jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Matti Blume"
+    },
+    {
+      "file": "ref-2.png",
+      "title": "File:Boeing 737-800 v1.0.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Boeing_737-800_v1.0.png",
+      "license": "CC BY-SA 3.0",
+      "artist": "Julien.scavini"
+    }
+  ]
+}

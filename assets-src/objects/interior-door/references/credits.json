@@ -1,0 +1,26 @@
+{
+  "query": "six panel interior door",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Interior view, first floor, northeast chamber, view looking to fireplace and mantel; note six panel door, picture rail, and paneling below the surbase - Tavern-Store-Kitchen, Route 29 HABS VA-1416-8.tif",
+      "source": "https://commons.wikimedia.org/wiki/File:Interior_view,_first_floor,_northeast_chamber,_view_looking_to_fireplace_and_mantel;_note_six_panel_door,_picture_rail,_and_paneling_below_the_surbase_-_Tavern-Store-Kitchen,_Route_29_HABS_VA-1416-8.tif",
+      "license": "Public domain",
+      "artist": "Graham, William E., creator"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:INTERIOR VIEW, WEST CHAMBER OVER THE SALOON FROM THE EAST. THE SIX-PANEL DOOR VISIBLE IN THE MAIN PASSAGE OPENS ONTO THE ATTIC STAIRS. THE SERVICE STAIR DOES NOT EXTEND HABS PA,51-PHILA,29-69.tif",
+      "source": "https://commons.wikimedia.org/wiki/File:INTERIOR_VIEW,_WEST_CHAMBER_OVER_THE_SALOON_FROM_THE_EAST._THE_SIX-PANEL_DOOR_VISIBLE_IN_THE_MAIN_PASSAGE_OPENS_ONTO_THE_ATTIC_STAIRS._THE_SERVICE_STAIR_DOES_NOT_EXTEND_HABS_PA,51-PHILA,29-69.tif",
+      "license": "Public domain",
+      "artist": "Elliott, Joseph, creator"
+    },
+    {
+      "file": "ref-3.jpg",
+      "title": "File:The church of All Saints - the Paston Door - geograph.org.uk - 720107.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_church_of_All_Saints_-_the_Paston_Door_-_geograph.org.uk_-_720107.jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Evelyn Simak"
+    }
+  ]
+}

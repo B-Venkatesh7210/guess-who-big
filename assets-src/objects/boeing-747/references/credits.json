@@ -1,0 +1,19 @@
+{
+  "query": "Boeing 747-400 side view",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:KLM Boeing 747-400 PH-BFW departing EHAM 7.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:KLM_Boeing_747-400_PH-BFW_departing_EHAM_7.jpg",
+      "license": "CC0",
+      "artist": "Pasci23456"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Boeing 747-400, Lufthansa, D-ABVM, landing on Runway 19 L. SFO. 747 (2237799111) (2).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Boeing_747-400,_Lufthansa,_D-ABVM,_landing_on_Runway_19_L._SFO._747_(2237799111)_(2).jpg",
+      "license": "CC BY-SA 2.0",
+      "artist": "Bill Abbott"
+    }
+  ]
+}

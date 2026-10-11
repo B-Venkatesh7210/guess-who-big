@@ -1,0 +1,19 @@
+{
+  "query": "Christ the Redeemer statue front",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Christ the Redeemer-(Corcovado) front view.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer-(Corcovado)_front_view.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Mucio Scorzelli"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Christ the Redeemer-(Corcovado) front view2.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer-(Corcovado)_front_view2.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Mucio Scorzelli"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "query": "Velociraptor mongoliensis restoration",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Velociraptor Mongoliensis Painting.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Velociraptor_Mongoliensis_Painting.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Dragos Andrei"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Velociraptor mongoliensis jmallon.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Velociraptor_mongoliensis_jmallon.jpg",
+      "license": "CC BY-SA 2.5",
+      "artist": "Jordan Mallon"
+    }
+  ]
+}

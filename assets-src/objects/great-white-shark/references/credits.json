@@ -1,0 +1,26 @@
+{
+  "query": "great white shark side",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:George Probst with great white shark photos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:George_Probst_with_great_white_shark_photos.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "GeorgeProbst"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:George Probst.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:George_Probst.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "GeorgeProbst"
+    },
+    {
+      "file": "ref-3.jpg",
+      "title": "File:'ware Sharks - Take Care of Your Gratuity Art.IWMPST2980.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%27ware_Sharks_-_Take_Care_of_Your_Gratuity_Art.IWMPST2980.jpg",
+      "license": "Public domain",
+      "artist": "GAMES, ABRAM (artist), Fosh and Cross Ltd, London (printer), Her Majesty's Stationery Office (publisher/sponsor)"
+    }
+  ]
+}

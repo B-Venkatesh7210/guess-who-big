@@ -1,0 +1,19 @@
+{
+  "query": "two storey detached house front elevation",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Tintinhull House (7178581658).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tintinhull_House_(7178581658).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Elliott Brown from Birmingham, United Kingdom"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Tintinhull House (7178607274).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tintinhull_House_(7178607274).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Elliott Brown from Birmingham, United Kingdom"
+    }
+  ]
+}

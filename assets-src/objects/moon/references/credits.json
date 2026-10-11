@@ -1,0 +1,26 @@
+{
+  "query": "full Moon",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Full Moon Luc Viatour.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Luc Viatour"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:FullMoon2010.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:FullMoon2010.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Gregory H. Revera"
+    },
+    {
+      "file": "ref-3.jpg",
+      "title": "File:Full moon partially obscured by atmosphere.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Full_moon_partially_obscured_by_atmosphere.jpg",
+      "license": "Public domain",
+      "artist": "NASA"
+    }
+  ]
+}

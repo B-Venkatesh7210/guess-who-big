@@ -1,5 +1,4 @@
 import { scaleObjects } from "../../data/objects";
-import { getSilhouetteGeometry } from "../../data/silhouettes";
 import { createRng, pickOne, randomBetween, type Rng } from "../random/random";
 import { computeStageLayout, silhouetteBox } from "../scale/stageLayout";
 import type {
@@ -85,7 +84,7 @@ const RULES: Record<RoundDifficulty, DifficultyRule> = {
 };
 
 function axisOf(object: ScaleObjectDefinition) {
-  return getSilhouetteGeometry(object.svgKey).axis;
+  return object.art.axis;
 }
 
 function isChallenging(
@@ -129,8 +128,8 @@ export function isPlayable(
   minGuessCm: number,
   maxGuessCm: number,
 ): boolean {
-  const referenceGeometry = getSilhouetteGeometry(reference.svgKey);
-  const targetGeometry = getSilhouetteGeometry(target.svgKey);
+  const referenceGeometry = reference.art;
+  const targetGeometry = target.art;
   const layout = computeStageLayout({
     stageWidth: PLAYABILITY_STAGE_WIDTH,
     zoom: 1,

@@ -1,0 +1,19 @@
+{
+  "query": "yellow pencil",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Yellow pencil whit eraser.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Yellow_pencil_whit_eraser.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Boaventuravinicius"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Yellow Faber Castell 2B pencil side no logo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Yellow_Faber_Castell_2B_pencil_side_no_logo.jpg",
+      "license": "CC0",
+      "artist": "999real"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "query": "Eiffel Tower front",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Champ de Mars from the Eiffel Tower - July 2006 edit.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Champ_de_Mars_from_the_Eiffel_Tower_-_July_2006_edit.jpg",
+      "license": "CC BY 2.5",
+      "artist": "Diliff, edited by Fir0002"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Tour eiffel at sunrise from the trocadero.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tour_eiffel_at_sunrise_from_the_trocadero.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Tristan Nitot"
+    }
+  ]
+}

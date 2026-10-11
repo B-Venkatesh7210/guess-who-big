@@ -1,11 +1,11 @@
 import { ObjectRenderer } from "@/components/objects/ObjectRenderer";
-import { getSilhouetteGeometry } from "@/data/silhouettes";
 import { silhouetteBox } from "@/lib/scale/stageLayout";
+import type { ScaleObjectDefinition } from "@/types/game";
 
 const REVEAL_EASE = "cubic-bezier(0.16, 1, 0.3, 1)";
 
 type ScaleObjectProps = {
-  svgKey: string;
+  object: ScaleObjectDefinition;
   /** Rendered px of the object's measured dimension, from the scale engine. */
   measuredPx: number;
   tone: "reference" | "target";
@@ -15,14 +15,14 @@ type ScaleObjectProps = {
 };
 
 export function ScaleObject({
-  svgKey,
+  object,
   measuredPx,
   tone,
   variant = "solid",
   animate = false,
   label,
 }: ScaleObjectProps) {
-  const box = silhouetteBox(getSilhouetteGeometry(svgKey), measuredPx);
+  const box = silhouetteBox(object.art, measuredPx);
   const color =
     variant === "ghost"
       ? "var(--text-primary)"
@@ -50,7 +50,12 @@ export function ScaleObject({
           style={{ background: "currentColor" }}
         />
       ) : null}
-      <ObjectRenderer svgKey={svgKey} variant={variant} pxPerUnit={box.pxPerUnit} />
+      <ObjectRenderer
+        objectId={object.id}
+        art={object.art}
+        variant={variant}
+        pxPerUnit={box.pxPerUnit}
+      />
       {label ? <span className="sr-only">{label}</span> : null}
     </div>
   );

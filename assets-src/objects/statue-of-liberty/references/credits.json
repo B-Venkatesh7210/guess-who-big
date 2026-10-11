@@ -1,0 +1,19 @@
+{
+  "query": "Statue of Liberty full pedestal",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Statue of liberty pedestal and liberty island.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Statue_of_liberty_pedestal_and_liberty_island.jpg",
+      "license": "Public domain",
+      "artist": "Erik Harmon"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:6P-Pedestal Details; 0P and 3P-Pedestal Details - Statue of Liberty, Liberty Island, Manhattan, New York, New York County, NY HAER NY,31-NEYO,89- (sheet 36 of 36).tif",
+      "source": "https://commons.wikimedia.org/wiki/File:6P-Pedestal_Details;_0P_and_3P-Pedestal_Details_-_Statue_of_Liberty,_Liberty_Island,_Manhattan,_New_York,_New_York_County,_NY_HAER_NY,31-NEYO,89-_(sheet_36_of_36).tif",
+      "license": "Public domain",
+      "artist": "Akboy, Serra"
+    }
+  ]
+}

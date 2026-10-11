@@ -1,0 +1,19 @@
+{
+  "query": "Stegosaurus restoration side",
+  "credits": [
+    {
+      "file": "ref-1.png",
+      "title": "File:Stegosaurus stenops model Smithsonian.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Stegosaurus_stenops_model_Smithsonian.png",
+      "license": "Public domain",
+      "artist": "Charles W. Gilmore"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Dinosaur attack and defense postcard, back.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Dinosaur_attack_and_defense_postcard,_back.jpg",
+      "license": "Public domain",
+      "artist": "Unknown authorUnknown author"
+    }
+  ]
+}

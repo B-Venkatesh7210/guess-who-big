@@ -1,0 +1,19 @@
+{
+  "query": "domestic cat standing side view",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Domestic cat in Poland 1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Domestic_cat_in_Poland_1.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "MichalPL"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:EB1911 Cat - Plate II, Fig. 4.—STRIPED DOMESTIC CAT.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:EB1911_Cat_-_Plate_II,_Fig._4.%E2%80%94STRIPED_DOMESTIC_CAT.jpg",
+      "license": "Public domain",
+      "artist": "Topical Press Agency"
+    }
+  ]
+}

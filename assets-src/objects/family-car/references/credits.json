@@ -1,0 +1,33 @@
+{
+  "query": "Toyota Camry side view 2018",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:2003 Toyota Camry... (45915474041).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2003_Toyota_Camry..._(45915474041).jpg",
+      "license": "CC BY 2.0",
+      "artist": "Matthew Paul  Argall from Australia"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:Sears Point Racing Experience Pace Car.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sears_Point_Racing_Experience_Pace_Car.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "TaurusEmerald"
+    },
+    {
+      "file": "ref-3.jpg",
+      "title": "File:Installation of bike racks at 48th Street as part of sidewalk and roadway restoration. (CM014B, 5-8-2018) (42198296881).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Installation_of_bike_racks_at_48th_Street_as_part_of_sidewalk_and_roadway_restoration._(CM014B,_5-8-2018)_(42198296881).jpg",
+      "license": "CC BY 2.0",
+      "artist": "MTA Capital Construction Mega Projects"
+    },
+    {
+      "file": "ref-4.jpg",
+      "title": "File:59th St 5th Av td (2018-08-27) 26 - Fifth Avenue Bus Lane.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:59th_St_5th_Av_td_(2018-08-27)_26_-_Fifth_Avenue_Bus_Lane.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "Tdorante10"
+    }
+  ]
+}

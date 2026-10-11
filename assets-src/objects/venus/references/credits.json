@@ -1,0 +1,19 @@
+{
+  "query": "Venus planet",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:Venus globe.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Venus_globe.jpg",
+      "license": "Public domain",
+      "artist": "NASA/JPL"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:PIA23791-Venus-RealAndEnhancedContrastViews-20200608 (cropped).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:PIA23791-Venus-RealAndEnhancedContrastViews-20200608_(cropped).jpg",
+      "license": "Public domain",
+      "artist": "NASA/JPL-Caltech"
+    }
+  ]
+}

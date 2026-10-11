@@ -1,0 +1,19 @@
+{
+  "query": "golf ball close-up white",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:DSC 6916 A golf ball perched on a colorful tee ready for the next drive on a sunny course.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:DSC_6916_A_golf_ball_perched_on_a_colorful_tee_ready_for_the_next_drive_on_a_sunny_course.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "PattayaPatrol"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:DSC 7027 A golfer crouches to line up a putt while fellow players and caddies look on under a clear blue sky.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:DSC_7027_A_golfer_crouches_to_line_up_a_putt_while_fellow_players_and_caddies_look_on_under_a_clear_blue_sky.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "PattayaPatrol"
+    }
+  ]
+}

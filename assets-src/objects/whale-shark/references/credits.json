@@ -1,0 +1,19 @@
+{
+  "query": "whale shark side",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:George Probst with great white shark photos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:George_Probst_with_great_white_shark_photos.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "GeorgeProbst"
+    },
+    {
+      "file": "ref-2.jpg",
+      "title": "File:George Probst.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:George_Probst.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "GeorgeProbst"
+    }
+  ]
+}

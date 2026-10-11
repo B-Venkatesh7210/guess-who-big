@@ -9,7 +9,6 @@ import {
   useState,
   type PointerEvent as ReactPointerEvent,
 } from "react";
-import { getSilhouetteGeometry } from "../../data/silhouettes";
 import { createGameSeed } from "../random/random";
 import {
   calculateGuessFromRenderedSize,
@@ -51,14 +50,14 @@ export function useGame(initialSeed: string, stageWidth: number) {
   const round = currentRound(state);
   const result = currentResult(state);
   const { reference, target } = useMemo(() => getRoundObjects(round), [round]);
-  const targetGeometry = getSilhouetteGeometry(target.svgKey);
+  const targetGeometry = target.art;
   const { phase, guessCm, zoom } = state;
 
   const layout = computeStageLayout({
     stageWidth,
     zoom,
     referenceCm: reference.realSizeCm,
-    referenceGeometry: getSilhouetteGeometry(reference.svgKey),
+    referenceGeometry: reference.art,
     targetMaxCm: round.maxGuessCm,
     targetGeometry,
   });

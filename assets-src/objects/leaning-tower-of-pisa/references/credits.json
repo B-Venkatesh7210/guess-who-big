@@ -1,0 +1,19 @@
+{
+  "query": "Leaning Tower of Pisa",
+  "credits": [
+    {
+      "file": "ref-1.jpg",
+      "title": "File:The Duomo and Tower of Pisa at sunrise.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Duomo_and_Tower_of_Pisa_at_sunrise.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "MHoser"
+    },
+    {
+      "file": "ref-2.jpeg",
+      "title": "File:The Leaning Tower of Pisa SB.jpeg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Leaning_Tower_of_Pisa_SB.jpeg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Saffron Blaze"
+    }
+  ]
+}
